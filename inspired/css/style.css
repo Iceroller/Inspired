@@ -306,13 +306,12 @@ h4{
     letter-spacing: 3px;
     color: #838383;
     font: 400 14px / 18px CenturyGothic, Arial, sans-serif;
-    padding: 20px 0 0;
+    padding: 20px 0px 42px 42px;
 }
 .social_links p{
     display: inline-block;
     vertical-align: middle;
-    padding-right: 20px;
-    margin: 0;
+    margin: 0 7px 15px 0;
 }
 .social_links ul{
     height: 100%;
@@ -324,7 +323,7 @@ h4{
     width: 38px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
+    margin: 0 4px 20px 5px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 	border-radius: 50%;
@@ -389,7 +388,7 @@ h4{
 /*//////////////////////////////////////////*/
 
 #nav{
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 }
 form.search{   
     width: 200px;
@@ -467,16 +466,17 @@ div.main_menu ul li a:active{
 .title_h1{
     color: #838383;
     font: 400 24px / 18px CenturyGothic, Arial, sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     border-top: 3px solid #000;
     border-bottom: 3px solid #2a292c;
     -o-border-image: url(../images/icons/border-top.png) 3 0 repeat;
+    -webkit-border-image: url(../images/icons/border-top.png) 3 0 repeat;
     border-image: url(../images/icons/border-top.png) 3 0 repeat;
-    margin-bottom: 11px;
+    margin-bottom: 28px;
     line-height: 40px;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 .title_h3{
     font-family: CenturyGothic, Arial, sans-serif;
@@ -484,7 +484,7 @@ div.main_menu ul li a:active{
     text-transform: uppercase;  
     font-size: 11px;
     font-weight: 400;
-    letter-spacing: 2px; 
+    letter-spacing: 2.3px; 
 }
 html, .slider{
     position: relative;
@@ -525,7 +525,7 @@ html, .slider{
 .slider_h2{
     color: #838383;
     font: 400 12px / 30px CenturyGothic, sans-serif; 
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     margin: 0px;
     padding: 0px;
@@ -544,7 +544,7 @@ span.author{
     margin: 0px;
 }
 .group{
-    width: 25%;
+    width: 24.4%;
     height: 100%;
     display: block;
     float: right;
@@ -553,7 +553,7 @@ span.author{
     width: 100%;
     height: 60px; 
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     text-align: left;
 }
 input.like,
@@ -568,7 +568,7 @@ input.dislike{
     border-radius: 50%;
     color: #ffffff;
     font-size: 30px;
-    margin: 20px 20px 20px 0;
+    margin: 18px 17px 0 0;
 }
 input.like:hover,
 input.dislike:hover{
@@ -600,11 +600,11 @@ input.dislike:hover{
     transition: all .3s;
 }
 .swiper-button-next{
-    bottom: 15px;
-    left: 890px;
+    bottom: 5px;
+    left: 912px;
 }
 .swiper-button-prev {
-    bottom: 15px;
+    bottom: 9px;
     left: 720px;
 }
 /*
@@ -627,28 +627,28 @@ input.dislike:hover{
 .articles_h1{
     color: #838383;
     font: 400 24px / 18px CenturyGothic, Arial, sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 4.3px;
     text-transform: uppercase;
-    margin: 0p 0 -20px 40px;
+    margin: -12px 0 17px 0;
     border-top: 3px solid #000;
     border-bottom: 3px solid #2a292c;
     -o-border-image: url(../images/icons/border-top.png) 3 0 repeat;
+    -webkit-border-image: url(../images/icons/border-top.png) 3 0 repeat;
     border-image: url(../images/icons/border-top.png) 3 0 repeat;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
 }
 .articles_h3{
-    font-family: CenturyGothic, Arial, sans-serif;
+    font: 400 11px / 19px CenturyGothic, Arial, sans-serif;
     color: #838383;
     text-transform: uppercase;  
-    font-size: 11px;
-    font-weight: 400;
     letter-spacing: 2px; 
-    padding: 20px 0;
+    padding: 12px 0 28px 0;
 }
 .articles_h4{
     color: #545454;
     font: 400 12px / 12px Tahoma, Arial, sans-serif;
+    margin: 5px 0 15px 0;
 }
 .articles sup{
     display: inline-block;
@@ -663,22 +663,23 @@ p.award{
     font: 400 11px / 18px CenturyGothic, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .article_box{
     width: 100%;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
     border-bottom: 3px solid #000;
     -o-border-image: url(../images/icons/border-top.png) 3 0 repeat;
+    -webkit-border-image: url(../images/icons/border-top.png) 3 0 repeat;
     border-image: url(../images/icons/border-top.png) 3 0 repeat;
 }
 article.true{
-    width: 48%;
-    margin-bottom: 20px;
+    width: 49%;
     display: inline-block;
     vertical-align: middle;
     text-align: left;
+    margin-bottom: 10px;
 }
 .fake{
     width: 48%;
@@ -699,6 +700,7 @@ article.true:after{
 .text{
     overflow: hidden;
     padding-left: 20px;
+    margin: 0;
 }
 .text p{
     color: #838383;
@@ -721,8 +723,8 @@ Secondary
 */
 .secondary{
     width: 100%;
-    padding-top: 45px;
-    padding-bottom: 70px;
+    padding-top: 43px;
+    padding-bottom: 84px;
 }
 .secondary:after{
     content: ".";
@@ -733,22 +735,22 @@ Secondary
 }
 .left_side{
     height: 23.6em;
-    width: 48%;
+    width: 48.5%;
     margin-bottom: 40px;
     float: left;
 } 
 .left_side_h1{
     color: #838383;
     font: 400 24px / 18px CenturyGothic, Arial, sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 4.4px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .left_side p{
     color: #838383;
     font: 400 12px / 20px Tahoma, Arial, sans-serif;
-    width: 85%;
-    padding-bottom: 7px;
+    width: 90%;
+    padding-bottom: 1px;
 }
 .left_side a{
     color: #9f9f9f;
@@ -759,7 +761,7 @@ Secondary
 }
 .imageholder{
     width: 100%;
-    height: 100%%;
+    height: 81%;
     position: relative;
 }
 .imageholder img{
@@ -767,7 +769,7 @@ Secondary
     height: 100%;
 }
 .right_side{
-    width: 48%;
+    width: 49.5%;
     float: right;
 }
 .right_side:after{
@@ -780,14 +782,14 @@ Secondary
 .right_side_h1{
     color: #838383;
     font: 400 24px / 18px CenturyGothic, Arial, sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 4.6px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 .right_side p{
     color: #838383;
     font: 400 12px / 20px Tahoma, Arial, sans-serif;
-    width: 413px;
+    width: 460px;
     padding-bottom: 15px;
 }
 .right_side .frame{
@@ -814,6 +816,7 @@ Secondary
     font: 400 14px / 18px CenturyGothic, Arial, sans-serif;
     letter-spacing: 3px;
     cursor: pointer;
+    margin-bottom: 91px;
 }
 #logo2{
     width: 315px;
@@ -825,6 +828,7 @@ Secondary
     -webkit-background-size: contain;
     text-indent: -99999px;
     float: right;
+    margin: -108px 5px 0px 0;
 }
 #logo2 a{
     width: 100%;
@@ -847,7 +851,7 @@ footer
     border-top: 2px solid #000;
 }
 .columns{
-    padding-top: 30px;
+    padding-top: 35px;
     width: 100%;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
@@ -855,25 +859,26 @@ footer
     line-height: 0;
     font-size: 1px;
     text-justify: newspaper;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 div.column1,
 div.column2,
 div.column3{
-    width: 31%;
+    width: 32%;
     display: inline-block;
     vertical-align: top;
 }
 .column1_h1,
-.column1_h2,
-.column1_h3{
+.column2_h1,
+.column3_h1{
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
-    padding: 15px 0; 
+    padding: 15px 0 10px 0; 
     margin-bottom: 35px;
     border-bottom: 3px solid #2a292c;
     -o-border-image: url(../images/icons/border-top.png) 3 0 repeat;
+    -webkit-border-image: url(../images/icons/border-top.png) 3 0 repeat;
     border-image: url(../images/icons/border-top.png) 3 0 repeat;
 }
 .column1 ul,
@@ -923,7 +928,7 @@ div.column3{
     vertical-align: middle;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
-    margin: 2px;
+    margin: 5px 7px 0 0;
 }
 .social li.facebook,
 .social li.twitter,
@@ -932,7 +937,6 @@ div.column3{
     background: #000;
     border-radius: 50%;
     position: relative;
-    margin: 0px;
 }
 .icon-facebook,
 .icon-twitter,
@@ -992,7 +996,7 @@ div.column3{
     padding-top: 20px;
 }
 .address3{
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .copyright{
     margin-left: 25px;
