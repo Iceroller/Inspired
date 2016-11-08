@@ -301,7 +301,50 @@ h4{
 .box{
     padding: 20px 40px;
 }
+.left_side .social_links{
+    position: absolute;
+    bottom:0;
+    left: 50px;
+    padding: 0;
+}
+.imageholder{
+    position: relative;
+}
+#share_links{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+#share_links #up{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0;
+    float: none;
+    background: #000 url(../images/icons/icoArrowLeft.png) center no-repeat;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transition: all .5s;
+}
+#share_links #up.active{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+.left_side .social_links.active {
+    bottom: -80px;
+}
+.left_side .imageholder{
+    overflow: hidden;
+}
 .social_links{
+
+    transition: all .5s;
     float: right;
     letter-spacing: 3px;
     color: #838383;
@@ -372,7 +415,6 @@ h4{
     scale(1.1);
     transform:         
     scale(1.1);
-    margin: 0px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     background: #d13b07;
@@ -734,7 +776,6 @@ Secondary
     visibility: hidden;
 }
 .left_side{
-    height: 23.6em;
     width: 48.5%;
     margin-bottom: 40px;
     float: left;
@@ -761,7 +802,8 @@ Secondary
 }
 .imageholder{
     width: 100%;
-    height: 81%;
+    float: none;
+
     position: relative;
 }
 .imageholder img{
@@ -859,7 +901,7 @@ footer
     line-height: 0;
     font-size: 1px;
     text-justify: newspaper;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
 }
 div.column1,
 div.column2,
@@ -982,7 +1024,6 @@ div.column3{
     scale(1.1);
     transform:         
     scale(1.1);
-    margin: 0px;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
     background: #d13b07;
@@ -1015,6 +1056,9 @@ div.column3{
 @media screen and (max-width: 978px) {
     .container{
         width: 748px
+    }
+    .article_box article{
+        width: 100%;
     }
 
 }
