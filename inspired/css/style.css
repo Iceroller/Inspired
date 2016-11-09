@@ -301,49 +301,11 @@ h4{
 .box{
     padding: 20px 40px;
 }
-.left_side .social_links{
-    position: absolute;
-    bottom:0;
-    left: 50px;
-    padding: 0;
-}
 .imageholder{
     position: relative;
 }
-#share_links{
-    position: absolute;
-    left:0;
-    bottom: 0;
-}
-#share_links #up{
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin: 0;
-    float: none;
-    background: #000 url(../images/icons/icoArrowLeft.png) center no-repeat;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transition: all .5s;
-}
-#share_links #up.active{
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-}
-.left_side .social_links.active {
-    bottom: -80px;
-}
-.left_side .imageholder{
-    overflow: hidden;
-}
 .social_links{
-
+    -webkit-transition: all .5s;
     transition: all .5s;
     float: right;
     letter-spacing: 3px;
@@ -378,14 +340,12 @@ h4{
 .social_links li .fb{
 	width: 30px;
 	height: 38px;
-	display: inline-block;
 	margin: 0 auto;
     vertical-align: middle;
 }
 .social_links li .twit{
 	width: 30px;
 	height: 38px;
-	display: inline-block;
 	margin: 0 auto;
     margin-top: -4px;
     vertical-align: middle;
@@ -393,7 +353,6 @@ h4{
 .social_links li .g_mail{
 	width: 27px;
 	height: 27px;
-	display: inline-block;
 	margin: 0 auto;
     padding-top: 6px;
     vertical-align: middle;
@@ -401,7 +360,6 @@ h4{
 .social_links li .yo_tube{
 	width: 30px;
 	height: 38px;
-	display: inline-block;
 	margin: 0 auto;
     vertical-align: middle;
 }
@@ -423,6 +381,20 @@ h4{
     display: block;
     width: 100%;
     height: 100%;
+}
+#mob_mnu{
+    width: 100%;
+    margin-left: 168px;
+}
+#mobile_mnu{
+    display: block;
+    background: url(../images/icons/ico-MobMenu.svg);
+    width: 38px;
+    height: 38px;
+    background-size: cover;
+}
+#mobile_mnu .on{
+    background: url(../images/icons/ico_close.svg); 
 }
 
 /*//////////////////////////////////////*/
@@ -467,12 +439,15 @@ form.search{
 	font-family: "fontello";
     color: #838383;
 }
-div.main_menu ul{
+.main_menu ul{
     display: inline-block;
     vertical-align: top;
     padding-bottom: 20px;
 }
-div.main_menu ul li{
+#mob_menu .main_menu ul{
+    opacity: 0;
+}
+.main_menu ul li{
     list-style: none;
     display: inline-block;
     font-family: CenturyGothic, Arial, sans-serif;
@@ -480,23 +455,23 @@ div.main_menu ul li{
     padding: 0;
     vertical-align: top;
 }
-div.main_menu ul li:nth-child(-n+5){
+.main_menu ul li:nth-child(-n+5){
     margin-right: 35px;
 }
-div.main_menu ul li a{
+.main_menu ul li a{
     text-decoration: none;
     color: #838383;
     letter-spacing: 3px;
 }
-div.main_menu ul li a:hover{
+.main_menu ul li a:hover{
     color: #2a292c;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-div.main_menu ul li a:visited{
+.main_menu ul li a:visited{
     text-decoration: none;
 }
-div.main_menu ul li a:active{
+.main_menu ul li a:active{
     color: dodgerblue;
 }
 #nav .container{
@@ -590,6 +565,7 @@ span.author{
     height: 100%;
     display: block;
     float: right;
+    background: #ffffff;
 }
 .swiper-slide form{
     width: 100%;
@@ -670,7 +646,7 @@ input.dislike:hover{
     color: #838383;
     font: 400 24px / 18px CenturyGothic, Arial, sans-serif;
     letter-spacing: 4.3px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: -12px 0 17px 0;
     border-top: 3px solid #000;
     border-bottom: 3px solid #2a292c;
@@ -679,6 +655,9 @@ input.dislike:hover{
     border-image: url(../images/icons/border-top.png) 3 0 repeat;
     padding-top: 40px;
     padding-bottom: 13px;
+}
+.articles_h1 span{
+    text-transform: uppercase;
 }
 .articles_h3{
     font: 400 11px / 19px CenturyGothic, Arial, sans-serif;
@@ -793,6 +772,64 @@ Secondary
     width: 90%;
     padding-bottom: 1px;
 }
+.left_side .social_links{
+    height: 48px;
+    margin-left: 41px;
+}
+.left_side .social_links ul{
+    background: rgba(177, 177, 177, 0.5);
+    border-top-right-radius: 4px;
+    padding-top: 5px;
+}
+.left_side .social_links{
+    position: absolute;
+    bottom:0;
+    left: 50px;
+    padding: 0;
+}
+#share_links{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    background: rgba(177, 177, 177, 0.5);
+    height: 48px;
+}
+#share_links span{
+    color: #ffffff;
+    font: 400 14px CenturyGothic, Arial, sans-serif;
+    padding-left: 10px;
+    text-shadow: 0 0 5px #000;
+}
+#share_links #up{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 12px 5px;
+    float: none;
+    background: #000 url(../images/icons/icoArrowLeft.png) center no-repeat;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border-radius: 50%;
+}
+#share_links #up.active{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+.left_side .social_links.active {
+    bottom: -80px;
+}
+.left_side .imageholder{
+    overflow: hidden;
+}
 .left_side a{
     color: #9f9f9f;
     font: 400 12px / 20px Tahoma, Arial, sans-serif;
@@ -803,7 +840,6 @@ Secondary
 .imageholder{
     width: 100%;
     float: none;
-
     position: relative;
 }
 .imageholder img{
@@ -1047,20 +1083,96 @@ div.column3{
     text-transform: uppercase;
 }
 /****************************************************************              PC              ***********************************************/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
     .container{
-        width: 978px
+        width: 1024px;
     }
+    
+}
+@media screen and (max-width: 1041px) {
+    .container{
+        width: 978px;
+    }
+    .slide-figure{
+        width: 100%;
+    }
+    .slide-figure img{
+        margin: 0 auto;
+    }
+    div.main_menu ul li:nth-child(-n+5){
+        margin-right: 30px;
+    }
+    form.search {
+        width: 190px;
+    }
+    .title_h3 {
+        letter-spacing: 2px;
+    }
+    .articles_h3 {
+        letter-spacing: 1.5px;
+    }
+    .group {
+        width: 70%;
+        height: 100%;
+        margin: 20px 120px 0 0;
+    }
+    .group:after {
+        content: "";
+        display: block;
+        clear: both;
+        font-size: 0;
+        line-height: 0;
+    }
+    .swiper-slide .form {
+        float: right;
+        margin: 40px 0 0 30px;
+    }
+    .swiper-button-prev {
+        bottom: 150px;
+        left: 124px;
+    }
+    .swiper-button-next {
+        bottom: 147px;
+        left: 749px;
+    }
+    .slider_h2, .slider_h4{
+        margin-left: 30px;
+    }
+    
+    
 }
 /****************************************************************              TABLET              ***********************************************/
 @media screen and (max-width: 978px) {
     .container{
-        width: 748px
+        width: 748px;
     }
     .article_box article{
         width: 100%;
     }
-
+    .social_links p{
+	    display: none;
+    }
+    .social_links {
+	    padding-top: none;
+    }
+    #mob_mnu{
+        
+    }
+    .main_menu ul{
+        padding: 40px 0 20px 0;
+        box-shadow: -2px 2px 5px 0px #838383;
+        margin-bottom: 20px;
+        width: 200px;
+        text-align: center;
+        float: right;
+        z-index: 9;
+    }
+    .main_menu ul li{
+	    display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
 }
 /****************************************************************              MOBILE              ***********************************************/
 @media screen and (max-width:748px) {
