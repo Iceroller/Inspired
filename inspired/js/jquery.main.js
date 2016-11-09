@@ -30,7 +30,8 @@
 				paginationClickable: true,
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
-			loop: true 
+			loop: true,
+            effect: 'fade'
 		}) 
 	} 
 
