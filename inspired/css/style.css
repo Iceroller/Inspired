@@ -310,8 +310,12 @@ h4{
 .menu-icon {
     display: inline-block;
     vertical-align: middle;
+    -webkit-transition: .2s;
     transition: .2s;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     border: none;
     outline: none;
@@ -327,6 +331,7 @@ h4{
      opacity: 1;
  }
 .menu-icon:active {
+     -webkit-transition: 0;
      transition: 0;
  }
 
@@ -338,6 +343,7 @@ h4{
      left:0;
      background: #000;
      border-radius: 0.28571rem;
+     -webkit-transition: 0.2s;
      transition: 0.2s;
      position: relative;
  }
@@ -347,11 +353,13 @@ h4{
     height: 0.16rem;
     background: #000;
     border-radius: 0.28571rem;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     position: absolute;
     left: 0;
     content: '';
     -webkit-transform-origin: 0.18571rem center;
+    -ms-transform-origin: 0.18571rem center;
     transform-origin: 0.18571rem center;
 }
 
@@ -375,22 +383,29 @@ h4{
  }
 
 .menu-icon.x2 .lines {
+     -webkit-transition: background 0.2s 0.5s ease;
      transition: background 0.2s 0.5s ease;
  }
 .menu-icon.x2 .lines:before, .menu-icon.x2 .lines:after {
                          -webkit-transform-origin: 50% 50%;
+                         -ms-transform-origin: 50% 50%;
                          transform-origin: 50% 50%;
                          transition: top 0.2s 0.6s ease, -webkit-transform 0.2s ease;
+                         -webkit-transition: top 0.2s 0.6s ease, -webkit-transform 0.2s ease;
                          transition: top 0.2s 0.6s ease, transform 0.2s ease;
+                         transition: top 0.2s 0.6s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
                      }
 
 .menu-icon.x2.close .lines {
+     -webkit-transition: background 0.3s 0s ease;
      transition: background 0.3s 0s ease;
      background: transparent;
  }
 .menu-icon.x2.close .lines:before, .menu-icon.x2.close .lines:after {
                                transition: top 0.2s ease, -webkit-transform 0.3s 0.5s ease;
+                               -webkit-transition: top 0.2s ease, -webkit-transform 0.3s 0.5s ease;
                                transition: top 0.2s ease, transform 0.3s 0.5s ease;
+                               transition: top 0.2s ease, transform 0.3s 0.5s ease, -webkit-transform 0.3s 0.5s ease;
                                top: 0;
                            }
 .menu-icon.x2.close .lines:before {
@@ -1274,6 +1289,7 @@ div.column3{
         padding: 0 0 20px 0;
         background: #fff;
         width: 100%;
+        height: -webkit-calc(100% - 120px);
         height: calc(100% - 120px);
         text-align: center;
         position: fixed;
@@ -1286,6 +1302,7 @@ div.column3{
         -webkit-box-sizing: border-box;
         margin:  120px auto 0;
         opacity: 0;
+        -webkit-transition: opacity .5s;
         transition : opacity .5s;
         pointer-events: none;
     }
@@ -1300,14 +1317,38 @@ div.column3{
         width: 100%;
         margin-bottom: 20px;
     }
-    .social_links li{
-        width: 20px !important;
-        height: 20px !important;
+    #header .social_links{
+        margin-top: 20px;
     }
-    .social_links li svg{
-        width: 16px !important;
-        height: 20px !important;
-        padding: 0 !important;
+    #header .social_links li{
+        width: 35px !important;
+        height: 35px !important;
+    }
+    #header .social_links li .fb{
+	    width: 27px;
+	    height: 35px;
+	    margin: 0 auto;
+        vertical-align: middle;
+    }
+    #header .social_links li .twit{
+        width: 27px;
+        height: 35px;
+        margin: 0 auto;
+        margin-top: -4px;
+        vertical-align: middle;
+    }
+    #header .social_links li .g_mail{
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
+        padding-top: 6px;
+        vertical-align: middle;
+    }
+    #header .social_links li .yo_tube{
+        width: 27px;
+        height: 35px;
+        margin: 0 auto;
+        vertical-align: middle;
     }
     #mob_mnu{
         display: inline-block;
@@ -1315,8 +1356,8 @@ div.column3{
         margin-left: 30px;
     }
     #logo{
-        width: 100px;
-        height: 40px;
+        width: 250px;
+        height: 66px;
     }
     .social_links{
         float: right;
@@ -1359,6 +1400,32 @@ div.column3{
         margin: 20px auto 0;
         float: none;
     }
+    .slide-figure{
+        margin-bottom: 25px;
+    }
+    .articles_h1{
+        letter-spacing: 2px;
+    }
+    .swiper-slide form{
+        float: right;
+        width: 15%;
+        padding-left: 15px;
+    }
+    .swiper-slide .form {
+        margin: 0 20px 0 0; 
+        width: 15%;
+    }
+    .dislike {
+	    margin: 10px 0 0 0 !important;
+    } 
+    .swiper-button-prev {
+        bottom: 140px;
+        left: 35px;
+    }
+    .swiper-button-next {
+        bottom: 137px;
+        left: 610px;
+    }
 }
 /****************************************************************              MOBILE              ***********************************************/
 @media screen and (max-width:748px) {
@@ -1375,6 +1442,10 @@ div.column3{
     .right_side .sub{
         margin: 0 0 20px;
     }
+    #logo {
+        margin: 0 auto;
+        display: block !important;
+    }
     figure{
         float: none;
     }
@@ -1389,7 +1460,6 @@ div.column3{
         letter-spacing: 1px;
         line-height: 1.2;
         text-align: left;
-        text-align: left;
     }
     .swiper-slide .form{
         display: block;
@@ -1400,20 +1470,46 @@ div.column3{
     }
     .social_links{
         float: none;
+        margin: 0 auto;
+    }
+    #header .social_links{
+        float: none;
+        margin: 0 auto ;
+        display: block !important;
+        padding-top: 40px;
+        width: 38%
     }
     #mob_mnu{
         float: right;
-        margin: -40px 0 0 0;
+        margin: -120px 0 0 0;
     }
     .main_menu ul{
         margin-top: 100px;
+        height: -webkit-calc(100% - 100px);
         height: calc(100% - 100px);
     }
-    .left_side .social_links ul{
-        padding-top: 15px;
+    .swiper-slide .form {
+        float: right;
+        margin: 0;
+        margin-right: 20px;
     }
-    .swiper-slide .form{
-        margin: 0 !important;
+    .swiper-slide form{
+        float: right;
+        width: 15%;
+    }
+    .swiper-slide form {
+        padding-left: 15px;
+    }
+    .dislike {
+	    margin: 10px 0 0 0 !important;
+    } 
+    .swiper-button-prev {
+        bottom: 140px;
+        left: 30px;
+    }
+    .swiper-button-next {
+        bottom: 137px;
+        left: 575px;
     }
 }
 
