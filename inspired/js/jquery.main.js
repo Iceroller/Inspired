@@ -7,18 +7,25 @@
 	}); 
 
     function mobileMenu(){
-        var opener = $('#mob_mnu #mobile_mnu'),
+        var opener = $('#mob_mnu'),
             slideItem = $('#mob_menu ul'),
-            activeclass= 'active';
+            html = $('html, body'),
+            activeclass2 = "close",
+            activeclass= 'active',
+            ico = $('.menu-icon');
 
         opener.on('click', function(e){
             e.preventDefault();
             if($(this).hasClass(activeclass)){
                 $(this).removeClass(activeclass);
                 slideItem.removeClass(activeclass);
+                html.removeClass(activeclass);
+                ico.removeClass(activeclass2);
             } else {
                 $(this).addClass(activeclass);
                 slideItem.addClass(activeclass);
+                html.addClass(activeclass);
+                ico.addClass(activeclass2);
             }
         })
     }
