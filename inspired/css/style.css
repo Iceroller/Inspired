@@ -416,9 +416,6 @@ h4{
      -webkit-transform: rotate3d(0, 0, 1, -45deg);
      transform: rotate3d(0, 0, 1, -45deg);
  }
-
-
-
 .box{
     padding: 20px 40px;
 }
@@ -503,7 +500,6 @@ h4{
     width: 100%;
     height: 100%;
 }
-
 #mobile_mnu{
     display: none;
     background: url(../images/icons/ico-MobMenu.svg);
@@ -595,9 +591,11 @@ form.search{
 #nav .container{
     border-bottom: 2px solid #000;
 }
+
 /*//////////////////////////////////////*/
 /*slider*/
 /*//////////////////////////////////////////*/
+
 .title_h1{
     color: #838383;
     font: 400 24px / 18px CenturyGothic, Arial, sans-serif;
@@ -1035,6 +1033,7 @@ Secondary
     font: 400 12px / 20px Tahoma, Arial, sans-serif; 
     display: block;
 }
+
 /*
 ====================
 =====================
@@ -1246,23 +1245,40 @@ div.column3{
         font-size: 0;
         line-height: 0;
     }
-    .swiper-slide .form {
-        float: right;
-        margin: 40px 0 0 30px;
-    }
-    .swiper-button-prev {
-        bottom: 150px;
-        left: 124px;
-    }
-    .swiper-button-next {
-        bottom: 147px;
-        left: 749px;
-    }
     .slider_h2, .slider_h4{
         margin-left: 30px;
     }
     #mob_mnu{
         display: none;
+    }
+    .dislike, .like{
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 22px !important;
+        display: inline-block;
+        margin: 0 10px !important;
+    }
+    .swiper-slide .form{
+        height: 35px;
+        float: right;
+        margin: 0;
+    }
+    .swiper-slide form{
+        width: 150px;
+        margin-top: 10px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        position: static;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 15px;
+    }
+    .swiper-button-prev{
+        margin-left: 100px;
+    }
+    .swiper-button-next {
+        float: right;
+        margin-right: 100px;
     }
     
     
@@ -1354,6 +1370,8 @@ div.column3{
         display: inline-block;
         vertical-align: middle;
         margin-left: 30px;
+        float: right;
+        margin-top: 20px;
     }
     #logo{
         width: 250px;
@@ -1375,28 +1393,10 @@ div.column3{
         width: 100%;
         margin-bottom: 30px;
     }
-    .swiper-button-prev{
-        bottom:0;
-        left:0;
-        right: auto;
-        margin: 0;
-        position: absolute;
-        top: auto;
-    }
-    .swiper-button-next{
-        bottom: 0;
-        right: 0;
-        left: auto;
-        margin: 0;
-        top: auto;
-        position: absolute;
-    }
     .slider{
         position: relative;
     }
     .slider .group {
-        width: 70%;
-        height: 100%;
         margin: 20px auto 0;
         float: none;
     }
@@ -1406,25 +1406,14 @@ div.column3{
     .articles_h1{
         letter-spacing: 2px;
     }
-    .swiper-slide form{
-        float: right;
-        width: 15%;
-        padding-left: 15px;
+    ul.active{
+        margin-top: 165px;
     }
-    .swiper-slide .form {
-        margin: 0 20px 0 0; 
-        width: 15%;
-    }
-    .dislike {
-	    margin: 10px 0 0 0 !important;
-    } 
-    .swiper-button-prev {
-        bottom: 140px;
-        left: 35px;
+    .swiper-button-prev{
+        margin-left: 40px;
     }
     .swiper-button-next {
-        bottom: 137px;
-        left: 610px;
+        margin-right: 40px;
     }
 }
 /****************************************************************              MOBILE              ***********************************************/
@@ -1442,7 +1431,7 @@ div.column3{
     .right_side .sub{
         margin: 0 0 20px;
     }
-    #logo {
+    #logo{
         margin: 0 auto;
         display: block !important;
     }
@@ -1461,10 +1450,6 @@ div.column3{
         line-height: 1.2;
         text-align: left;
     }
-    .swiper-slide .form{
-        display: block;
-        float: none;
-    }
     .slide-figure{
         float: none;
     }
@@ -1480,36 +1465,148 @@ div.column3{
         width: 38%
     }
     #mob_mnu{
-        float: right;
-        margin: -120px 0 0 0;
+        margin: -50px 0 0 0;
     }
     .main_menu ul{
         margin-top: 100px;
         height: -webkit-calc(100% - 100px);
         height: calc(100% - 100px);
+    } 
+    .dislike, .like{
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 22px !important;
+        display: inline-block;
+        margin: 0 10px !important;
     }
-    .swiper-slide .form {
-        float: right;
-        margin: 0;
-        margin-right: 20px;
+    .swiper-slide .form{
+        height: 35px;
     }
     .swiper-slide form{
-        float: right;
-        width: 15%;
+        width: 150px;
+        margin-top: 10px;
     }
-    .swiper-slide form {
-        padding-left: 15px;
+    .swiper-button-prev, .swiper-button-next{
+        position: static;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 15px;
     }
-    .dislike {
-	    margin: 10px 0 0 0 !important;
-    } 
-    .swiper-button-prev {
-        bottom: 140px;
-        left: 30px;
+    .swiper-button-prev{
+        margin-left: 20px;
     }
     .swiper-button-next {
-        bottom: 137px;
-        left: 575px;
+        float: right;
+        margin-right: 20px;
+    }
+    .facebook,
+    .twitter,
+    .google_mail,
+    .youtube{
+        background: #000;
+        border-radius: 50%;
+        position: relative;
+        height: 38px;
+        width: 38px!important;
+    }
+    .icon-facebook,
+    .icon-twitter,
+    .icon-mail,
+    .icon-youtube{
+        font-family: "fontello";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+        color: #ffffff;
+        line-height: 38px;
+    }
+    .icon-facebook{
+        font-size: 27px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .icon-twitter{
+        position: absolute;
+        top: 0;
+        left: 6px;
+    }
+    .icon-mail{
+        position: absolute;
+        top: 0;
+        left: 9.5px;
+    }
+    .icon-youtube{
+        position: absolute;
+        top: 0;
+        left: 8.5px;
+    }
+    .socials a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #header .social_links{
+        display: none !important;    
+    }
+    .group {
+	    width: 95% !important;
+        margin: 0 20px !important;
+    }
+    .swiper-button-prev{
+        margin-left: 60px;
+    }
+    .swiper-button-next {
+        margin-right: 60px;
     }
 }
+@media screen and (max-width:500px) {
+
+    .imageholder #socialmove,
+    #share_links{
+        display: none;
+    }  
+}
+@media screen and (max-width:400px) {
+    
+    .group {
+	    width: 100% !important;
+        margin: 0 !important;
+    }
+    .swiper-button-prev{
+        margin-left: 20px;
+    }
+    .swiper-button-next {
+        margin-right: 20px;
+    } 
+    #logo{
+        width: 170px;
+        height: 44px;
+        margin: 0 0;
+    }
+    #mob_mnu{
+        margin-top: -40px;
+    }
+    .form{
+        float: none !important;
+    }
+    form{
+        margin: 0 auto;
+    }
+    .slider_h2{
+        padding-top: 10px;
+    }
+}
+df
+ыва
+sd
+fsd
+а
+ыва
+ыва
+ыва
+ыва
+sdf
 
