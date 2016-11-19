@@ -283,7 +283,7 @@ h4{
     height: 89px;
     display: inline-block;
     vertical-align: middle;
-    background: url(../images/icons/Logo.png) left center no-repeat;
+    background: url() left center no-repeat;
     background-size: cover;
     -webkit-background-size: contain;
     text-indent: -99999px;
