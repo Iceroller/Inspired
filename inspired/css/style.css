@@ -20,17 +20,6 @@
   font-style: normal;
 }
 /*
-@font-face {
-      font-family: 'fontello';
-      src: url('../font/fontello.eot?62542226');
-      src: url('../font/fontello.eot?62542226#iefix') format('embedded-opentype'),
-           url('../font/fontello.woff?62542226') format('woff'),
-           url('../font/fontello.ttf?62542226') format('truetype'),
-           url('../font/fontello.svg?62542226#fontello') format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
-*/
 
 /*reset start*/
 /* =============================================================================
@@ -277,13 +266,13 @@ h4{
 /*//////////////////////////////////////*/
 /*header*/
 /*//////////////////////////////////////////*/
-
+    
 #logo{
     width: 315px;
     height: 89px;
     display: inline-block;
     vertical-align: middle;
-    background: url() left center no-repeat;
+    background: url(../images/icons/Logo.png) left center no-repeat;
     background-size: cover;
     -webkit-background-size: contain;
     text-indent: -99999px;
@@ -733,11 +722,11 @@ input.dislike:hover{
     transition: all .3s;
 }
 .swiper-button-next{
-    bottom: 5px;
+    bottom: 7px;
     left: 912px;
 }
 .swiper-button-prev {
-    bottom: 9px;
+    bottom: 4px;
     left: 720px;
 }
 /*
@@ -1204,11 +1193,7 @@ div.column3{
 @media screen and (max-width: 1240px) {
     .container{
         width: 1024px;
-    }
-    #mob_mnu{
-        display: none;
-    }
-    
+    } 
 }
 @media screen and (max-width: 1041px) {
     .container{
@@ -1248,9 +1233,6 @@ div.column3{
     .slider_h2, .slider_h4{
         margin-left: 30px;
     }
-    #mob_mnu{
-        display: none;
-    }
     .dislike, .like{
         width: 35px !important;
         height: 35px !important;
@@ -1287,6 +1269,12 @@ div.column3{
 @media screen and (max-width: 978px) {
     .container{
         width: 748px;
+    }
+    .soc{
+        margin-top: 460px !important;
+    }
+    .soc li{
+        margin: 0 5px !important;
     }
     #mobile_mnu{
         display: block;
@@ -1328,10 +1316,9 @@ div.column3{
         pointer-events: auto;
     }
     .main_menu ul li{
-	    display: block;
         margin: 0 auto;
         width: 100%;
-        margin-bottom: 20px;
+        margin: 15px 5px;
     }
     #header .social_links{
         margin-top: 20px;
@@ -1586,9 +1573,6 @@ div.column3{
         height: 44px;
         margin: 0 0;
     }
-    #mob_mnu{
-        margin-top: -40px;
-    }
     .form{
         float: none !important;
     }
@@ -1598,5 +1582,8 @@ div.column3{
     .slider_h2{
         padding-top: 10px;
     }
-}
+    .main_menu ul{
+        margin-top: 80px;
+    }
+}    
 
