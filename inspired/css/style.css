@@ -317,25 +317,25 @@ h4{
     line-height: 1;
 }
 .menu-icon:hover {
-     opacity: 1;
- }
+    opacity: 1;
+}
 .menu-icon:active {
-     -webkit-transition: 0;
-     transition: 0;
- }
+    -webkit-transition: 0;
+    transition: 0;
+}
 
 .menu-icon .lines {
-     display: inline-block;
-     width: 2.2rem;
-     height: 0.16rem;
-     top:50%;
-     left:0;
-     background: #000;
-     border-radius: 0.28571rem;
-     -webkit-transition: 0.2s;
-     transition: 0.2s;
-     position: relative;
- }
+    display: inline-block;
+    width: 2.2rem;
+    height: 0.16rem;
+    top:50%;
+    left:0;
+    background: #000;
+    border-radius: 0.28571rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    position: relative;
+}
 .menu-icon .lines:before, .menu-icon .lines:after {
     display: inline-block;
     width: 2.2rem;
@@ -351,60 +351,55 @@ h4{
     -ms-transform-origin: 0.18571rem center;
     transform-origin: 0.18571rem center;
 }
-
 .menu-icon .lines:before {
     top: 0.6rem;
 }
 .menu-icon .lines:after {
     top: -0.6rem;
 }
-
 .menu-icon:hover .lines:before {
-     top: 0.8rem;
- }
+    top: 0.8rem;
+}
 .menu-icon:hover .lines:after {
-     top: -0.8rem;
- }
-
+    top: -0.8rem;
+}
 .menu-icon.close {
    -webkit-transform: scale3d(0.6, 0.6, 0.6);
    transform: scale3d(0.6, 0.6, 0.6);
- }
-
+}
 .menu-icon.x2 .lines {
-     -webkit-transition: background 0.2s 0.5s ease;
-     transition: background 0.2s 0.5s ease;
- }
+    -webkit-transition: background 0.2s 0.5s ease;
+    transition: background 0.2s 0.5s ease;
+}
 .menu-icon.x2 .lines:before, .menu-icon.x2 .lines:after {
-                         -webkit-transform-origin: 50% 50%;
-                         -ms-transform-origin: 50% 50%;
-                         transform-origin: 50% 50%;
-                         transition: top 0.2s 0.6s ease, -webkit-transform 0.2s ease;
-                         -webkit-transition: top 0.2s 0.6s ease, -webkit-transform 0.2s ease;
-                         transition: top 0.2s 0.6s ease, transform 0.2s ease;
-                         transition: top 0.2s 0.6s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
-                     }
-
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: webkit-transform 0.2s ease;
+    -webkit-transease, -webkit-transform 0.2s ease;
+    transition:transform 0.2s ease;
+    transition:transform 0.2s ease, -webkit-transform 0.2s ease;
+}
 .menu-icon.x2.close .lines {
-     -webkit-transition: background 0.3s 0s ease;
-     transition: background 0.3s 0s ease;
-     background: transparent;
- }
+    -webkit-transition: background 0.3s 0s ease;
+    transition: background 0.3s 0s ease;
+    background: transparent;
+}
 .menu-icon.x2.close .lines:before, .menu-icon.x2.close .lines:after {
-                               transition: top 0.2s ease, -webkit-transform 0.3s 0.5s ease;
-                               -webkit-transition: top 0.2s ease, -webkit-transform 0.3s 0.5s ease;
-                               transition: top 0.2s ease, transform 0.3s 0.5s ease;
-                               transition: top 0.2s ease, transform 0.3s 0.5s ease, -webkit-transform 0.3s 0.5s ease;
-                               top: 0;
-                           }
+    transition: top 0.2s ease, -webkit-transform 0.3s 0.5s ease;
+    -webkit-transition: top 0.2s ease, -webkit-transform 0.3s 0.5s ease;
+    transition: top 0.2s ease, transform 0.3s 0.5s ease;
+    transition: top 0.2s ease, transform 0.3s 0.5s ease, -webkit-transform 0.3s 0.5s ease;
+    top: 0;
+}
 .menu-icon.x2.close .lines:before {
-     -webkit-transform: rotate3d(0, 0, 1, 45deg);
-     transform: rotate3d(0, 0, 1, 45deg);
- }
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+}
 .menu-icon.x2.close .lines:after {
-     -webkit-transform: rotate3d(0, 0, 1, -45deg);
-     transform: rotate3d(0, 0, 1, -45deg);
- }
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+}
 .box{
     padding: 20px 40px;
 }
