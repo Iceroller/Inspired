@@ -8,7 +8,7 @@
 
     function mobileMenu(){
         var opener = $('#mob_mnu'),
-            slideItem = $('#mob_menu ul'),
+            slideItem = $('#mob_menu'),
             html = $('html, body'),
             activeclass2 = "close",
             activeclass= 'active',

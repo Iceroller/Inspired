@@ -1288,17 +1288,23 @@ div.column3{
     }
     .main_menu{
         position: fixed;
-        z-index: 0;
         top:0;
         left: 0;
         right: 0;
-        margin: 100px auto 0;
-        overflow-y: scroll;
-        height: 100%;
+        margin: 100px 0 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: -webkit-calc(100% - 100px);
+        height: calc(100% - 100px);
+        opacity: 0;
+        -webkit-transition: opacity .5s;
+        transition : opacity .5s;
+        pointer-events: none;
+        z-index: 500;
+        background: #fff;
+        padding: 0;
     }
     .main_menu ul{
-        padding: 0 0 20px 0;
-        background: #fff;
         width: 100%;
         height: -webkit-calc(100% - 120px);
         height: calc(100% - 120px);
@@ -1306,19 +1312,32 @@ div.column3{
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        opacity: 0;
-        -webkit-transition: opacity .5s;
-        transition : opacity .5s;
-        pointer-events: none;
-        z-index: 500;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0 !important;
     }
-    .main_menu ul.active{
+    .main_menu ul.soc{
+        height: auto !important;
+        display: block !important;
+        margin-top: 0 !important;
+        padding: 20px 0 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .main_menu ul li{
+        margin: 0 !important;
+        line-height: 2em;
+    }
+    .main_menu ul.soc li i{
+        height: 38px;
+    }
+    .main_menu.active{
         display: block;
         opacity: 1;
         pointer-events: auto;
     }
     .main_menu ul li{
-        margin: 0 auto;
         width: 100%;
         margin: 15px 5px;
     }
@@ -1395,9 +1414,7 @@ div.column3{
     .articles_h1{
         letter-spacing: 2px;
     }
-    ul.active{
-        margin-top: 165px;
-    }
+
     .swiper-button-prev{
         margin-left: 40px;
     }
@@ -1459,11 +1476,7 @@ div.column3{
     #mob_mnu{
         margin: -50px 0 0 0;
     }
-    .main_menu ul{
-        margin-top: 0px;
-        height: -webkit-calc(100% - 100px);
-        height: calc(100% - 100px);
-    } 
+
     .dislike, .like{
         width: 35px !important;
         height: 35px !important;
