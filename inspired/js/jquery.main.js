@@ -10,8 +10,8 @@
         var opener = $('#mob_mnu'),
             slideItem = $('#mob_menu'),
             html = $('html, body'),
-            activeclass2 = "close",
             activeclass= 'active',
+            activeclass2= 'close',
             ico = $('.menu-icon');
 
         opener.on('click', function(e){
