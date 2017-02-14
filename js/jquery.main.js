@@ -23,7 +23,7 @@
                 ico.removeClass(activeclass2);
             } else {
                 $(this).addClass(activeclass);
-                slideItem.addClass(activeclass);
+                slideItem.addClass(activeclass); 
                 html.addClass(activeclass);
                 ico.addClass(activeclass2);
             }
